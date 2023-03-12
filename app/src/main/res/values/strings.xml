@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Team List</string>
+    <string name="address">Address</string>
+    <string name="enter_member_name">Enter member name</string>
+    <string name="contact_number">Contact number</string>
+    <string name="email_id">Email id</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="hello">Hello</string>
+    <string name="enter_mobile_number_to_sign_in">Enter mobile number to sign in</string>
+    <string name="number">Number</string>
+</resources>

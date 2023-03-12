@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_add_member"
+        android:icon="@drawable/add_member_icon"
+        android:title="Add member"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/item_delete_all_members"
+        android:icon="@drawable/delete_icon"
+        android:title="Delete all"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/item_logout"
+        android:icon="@drawable/logout_icon"
+        android:title="Logout"
+        app:showAsAction="always|withText" />
+</menu>
