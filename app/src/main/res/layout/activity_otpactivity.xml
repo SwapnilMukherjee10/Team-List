@@ -10,8 +10,8 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="337dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="48dp"
         android:fontFamily="@font/lilita_one"
         android:gravity="center"
         android:text="Enter your OTP below"
@@ -19,44 +19,57 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextOTP"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/editTextOTP"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="smsOTPCode"
         android:background="@drawable/box"
         android:ems="10"
         android:fontFamily="@font/lilita_one"
         android:gravity="center"
+        android:importantForAutofill="yes"
         android:inputType="number"
         android:maxLength="6"
-        android:autofillHints="smsOTPCode"
-        android:importantForAutofill="yes"
-        app:layout_constraintBottom_toTopOf="@+id/buttonVerify"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.5"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/buttonVerify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="204dp"
         android:layout_weight="1"
         android:fontFamily="@font/lilita_one"
         android:text="Verify"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextOTP" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="345dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="44dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/otp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

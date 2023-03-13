@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:backgroundTint="#F1E9FB">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:background="@drawable/details_shape"
         android:orientation="vertical">
 
         <TextView
@@ -18,7 +20,8 @@
             android:fontFamily="@font/lilita_one"
             android:text="TextView"
             android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:maxLines="1"/>
 
         <TextView
             android:id="@+id/textViewNumber"
@@ -28,7 +31,8 @@
             android:fontFamily="sans-serif-medium"
             android:text="TextView"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:maxLines="1"/>
 
         <TextView
             android:id="@+id/textViewEmail"
@@ -38,7 +42,8 @@
             android:fontFamily="sans-serif-medium"
             android:text="TextView"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:maxLines="1"/>
 
         <TextView
             android:id="@+id/textViewAddress"
@@ -49,7 +54,8 @@
             android:fontFamily="sans-serif-medium"
             android:text="TextView"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:maxLines="1" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
